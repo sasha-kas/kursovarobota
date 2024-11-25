@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/show.js"></script>
+    <title>Healing Paw clinic</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- Навігація -->
+        <nav class="navbar">
+          <img class="logoimg" src="/img/logo.png">  <a class="logo">Healing Paw clinic</a>
+            <div class="nav-links">
+                <a href="#services">Послуги та вартість</a>
+                <a href="#about">Про клініку</a>
+                <a href="#contacts">Контакти</a>
+                <a href="#appointment" class="appointment-btn">Записатись на прийом</a>
+
+            </div>
+        </nav>
+
+
+        <!-- Головний банер -->
+        <div class="hero">
+            <img src="/img/1.jpg" alt="Veterinarian with cat">
+        </div>
+
+        <!-- Історія розвитку -->
+        <section class="history" id="about">
+            <h2>Історія нашого розвитку</h2>
+
+            <div class="history-content">
+                <div class="history-text" >
+                    <img src="/img/Icon1.png" class="history-text-icon_1">
+                    <p>Історія нашої ветеринарної клініки почалася в 2015 році, коли команда ветеринарів-ентузіастів вирішила створити медичний заклад, що відповідав би сучасним стандартам допомоги для тварин. Від самого початку наша місія полягала в тому, щоб об'єднати любов до тварин, знання та технології для надання повного спектру ветеринарних послуг.</p>
+                </div>
+                <div class="history-image">
+                    <img src="/img/2.jpg" alt="Veterinarian examining dog">
+                </div>
+            </div>
+
+            <div class="history-content">
+                <div class="history-image">
+                    <img src="/img/3.jpg" alt="Veterinary examination">
+                </div>
+                <div class="history-text">
+                    <img src="/img/Icon1.png" class="history-text-icon_2">
+                    <p>Ми починали як невелика команда з великим баченням – створити простір, де турбота про здоров'я тварин стоїть на першому місці. Завдяки підтримці наших клієнтів та спільноти, ми з часом розширились, залучили більше спеціалістів та обладнання, розширивши спектр послуг від планових оглядів і вакцинації до складних хірургічних втручань, діагностики та стоматологічних послуг.</p>
+                </div>
+            </div>
+
+            <div class="history-content">
+                <div class="history-text">
+                    <img src="/img/Icon1.png" class="history-text-icon_3">
+                    <p>Сьогодні клініка оснащена найновішим обладнанням, а наша команда постійно підвищує свою кваліфікацію, щоб бути в курсі найновіших досягнень у ветеринарній медицині. Ми пишаємося тим, що пропонуємо індивідуальний підхід до кожного пацієнта, забезпечуючи комфорт і для тварин, і для їхніх власників.</p>
+                </div>
+                <div class="history-image">
+                    <img src="/img/4.jpg" alt="Modern veterinary equipment">
+                </div>
+            </div>
+
+            <div class="final-message">
+
+                <img src="/img/heart2.png" class="final-message-icon_2">
+                <img src="/img/heart3.png" class="final-message-icon_3">
+                <p>Наша клініка – це місце, де ви знайдете кваліфіковану допомогу для своїх улюбленців та підтримку відданої команди. Ми вдячні за вашу довіру і готові допомогти у будь-якій ситуації, бо розуміємо, що ваші тварини – це частина вашої родини.</p>
+            </div>
+        </section>
+    </div>
+<section id="services" class="services-section">
+    <div class="services-dropdown">
+        <button onclick="toggleServices()" class="dropdown-button">
+            Послуги та вартість ▼
+        </button>
+        <div id="servicesList" class="services-content hidden">
+
+            <!-- Оглядові та консультаційні послуги -->
+            <div class="service-category">
+                 <button class="category-button" onclick="toggleCategory('consultingServices')">Оглядові та консультаційні послуги ▼</button>
+                <div id="consultingServices" class="category-content hidden">
+                <div class="service-item">
+                    <span class="service-name">Консультація терапевта</span>
+                    <span class="service-price">300 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Консультація дієтолога</span>
+                    <span class="service-price">300 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Офтальмологічне обстеження</span>
+                    <span class="service-price">1100 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Кардіологічне обстеження</span>
+                    <span class="service-price">1300 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Дерматологічна консультація</span>
+                    <span class="service-price">850 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Онкологічне обстеження</span>
+                    <span class="service-price">2000 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Неврологічне обстеження</span>
+                    <span class="service-price">1400 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Хірургічна консультація</span>
+                    <span class="service-price">700 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Консультація головного лікаря</span>
+                    <span class="service-price">1500 грн</span>
+                </div>
+            </div>
+
+            <!-- Діагностичні та обстежувальні послуги -->
+            <div class="service-category">
+                 <button class="category-button" onclick="toggleCategory('diagnosticServices')">Діагностичні та обстежувальні послуги ▼</button>
+                <div id="diagnosticServices" class="category-content hidden">
+                <div class="service-item">
+                    <span class="service-name">Плановий огляд</span>
+                    <span class="service-price">250 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Лабораторні аналізи</span>
+                    <span class="service-price">600 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">УЗД обстеження</span>
+                    <span class="service-price">700 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Рентгенологічне обстеження</span>
+                    <span class="service-price">1000 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Інфекційне обстеження</span>
+                    <span class="service-price">1100 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Стоматологічний огляд</span>
+                    <span class="service-price">500 грн</span>
+                </div>
+            </div>
+
+            <!-- Лікувальні та терапевтичні послуги -->
+
+               <div class="service-category">
+                <button class="category-button" onclick="toggleCategory('treatmentServices')">Лікувальні та терапевтичні послуги ▼</button>
+                <div id="treatmentServices" class="category-content hidden">
+
+                <div class="service-item">
+                    <span class="service-name">Терапевтичне лікування</span>
+                    <span class="service-price">900 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Діагностика та лікування інфекцій</span>
+                    <span class="service-price">1200 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Догляд за ранами</span>
+                    <span class="service-price">400 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Стоматологічне лікування</span>
+                    <span class="service-price">900 грн</span>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <button class="category-button" onclick="toggleCategory('surgeryServices')">Хірургічні послуги ▼</button>
+                <div id="surgeryServices" class="category-content hidden">
+                    <div class="service-item">
+                    <span class="service-name">Стерилізація/кастрація</span>
+                    <span class="service-price">1500 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Хірургічне втручання</span>
+                    <span class="service-price">5000 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Анестезіологічне забезпечення</span>
+                    <span class="service-price">1500 грн</span>
+                </div>
+            </div>
+
+            <!-- Додаткові послуги -->
+       <div class="service-category">
+                <button class="category-button" onclick="toggleCategory('additionalServices')">Додаткові послуги ▼</button>
+                <div id="additionalServices" class="category-content hidden">
+                    <div class="service-item">
+                    <span class="service-name">Вакцинація</span>
+                    <span class="service-price">500 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Чистка зубів</span>
+                    <span class="service-price">800 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Грумінг (стрижка)</span>
+                    <span class="service-price">500 грн</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-name">Госпіталізація (доба)</span>
+                    <span class="service-price">1000 грн</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+          </div>
+       </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+    <!-- Форма запису на прийом -->
+<div id="appointment" class="appointment-form" style="display: none;">
+    <form id="appointmentForm" onsubmit="submitAppointment(event)">
+        <h2>Записатись на прийом</h2>
+<h3>Дані власника</h3>
+         <input type="text" name="ownerFName" placeholder="Ваше Ім'я" required>
+        <input type="text" name="ownerLName" placeholder="Ваше Прізвище" required>
+        <input type="text" name="phone" placeholder="Контактний номер телефону" required>
+        <input type="text" name="address" placeholder="Адреса проживання" required>
+        <h3>Дані пацієнта</h3>
+        <input type="text" name="patientName" placeholder="Ім'я пацієнта" required>
+        <input type="text" name="species" placeholder="Вид тварини" required>
+        <input type="text" name="breed" placeholder="Порода" required>
+        <label for="birthDate">Дата народження:</label>
+<input type="date" id="birthDate" name="birthDate" required>
+
+        <select name="doctorId" required>
+            <option value="">Оберіть лікаря</option>
+        </select>
+
+        <select name="serviceId" required>
+            <option value="">Оберіть послугу</option>
+        </select>
+        <!-- Вибір дати -->
+        <label for="appointmentDateTime">Дата та час прийому:</label>
+        <input type="datetime-local" name="appointmentDateTime" id="appointmentDateTime" required>
+
+        <!-- Опис проблеми -->
+        <textarea name="description" placeholder="Опис проблеми" required></textarea>
+
+        <button type="submit">Записатись</button>
+    </form>
+</div>
+<!-- Блок Контакти -->
+<footer class="footer" id="contacts">
+    <div class="footer-container">
+        <h2>Контакти</h2>
+        <p><strong>Адреса:</strong> м. Львів, вул. Лісова, 12</p>
+        <p><strong>Телефон:</strong> <a href="tel:+380987654321">+38 (098) 765-43-21</a></p>
+
+        <nav class="footer-nav">
+            <a href="#services">Послуги та вартість</a>
+            <a href="#about">Про клініку</a>
+             </nav>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+ function toggleCategory(categoryId) {
+    const categoryContent = document.getElementById(categoryId);
+    const button = document.querySelector(`[onclick="toggleCategory('${categoryId}')"]`);
+
+    categoryContent.classList.toggle('hidden');
+
+    // Змінюємо стрілку на кнопці
+    if (categoryContent.classList.contains('hidden')) {
+        button.innerHTML = button.innerHTML.replace('▲', '▼');
+    } else {
+        button.innerHTML = button.innerHTML.replace('▼', '▲');
+    }
+}
+
+</script>
+<script>
+function toggleServices() {
+    const servicesList = document.getElementById('servicesList');
+    const button = document.querySelector('.dropdown-button');
+
+    if (servicesList.classList.contains('hidden')) {
+        servicesList.classList.remove('hidden');
+        button.innerHTML = 'Послуги та вартість ▲';
+    } else {
+        servicesList.classList.add('hidden');
+        button.innerHTML = 'Послуги та вартість ▼';
+    }
+}
+</script>
+
+</body>
+</html>
